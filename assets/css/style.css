@@ -1,0 +1,70 @@
+:root {
+    --dark-teal: #376F7B;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    line-height: 150%;
+    color: #114673;
+}
+
+body {
+    background-color: #A4CDD6;
+}
+
+header {
+    font-family: Montserrat, Roboto Slab, Open Sans;
+    padding: 15px;
+    background-color: var(--dark-teal);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+header h1 a, nav ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 0px 5px;
+}
+
+header nav {
+    font-size: 110%;
+    background-color: var(--dark-teal);
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0px 6px;
+}
+
+/* Size where nav bar gets a little too close to name */
+@media screen and (max-width: 992px) {
+    header {
+        display: block;
+    }
+    header nav {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+/* General estimate of phone width */
+@media screen and (max-width: 500px) {
+    header nav ul li {
+        display: block;
+    }
+}
