@@ -1,5 +1,6 @@
 :root {
-    --dark-teal: #376F7B;
+    --header-background: #376F7B;
+    --header-link-color: #fff;
 }
 
 * {
@@ -18,7 +19,7 @@ body {
 header {
     font-family: Montserrat, Roboto Slab, Open Sans;
     padding: 15px;
-    background-color: var(--dark-teal);
+    background-color: var(--header-background);
     position: sticky;
     top: 0;
     display: flex;
@@ -31,13 +32,13 @@ header h1 {
 
 header h1 a, nav ul li a {
     text-decoration: none;
-    color: white;
+    color: var(--header-link-color);
     margin: 0px 5px;
 }
 
 header nav {
     font-size: 110%;
-    background-color: var(--dark-teal);
+    background-color: var(--header-background);
 }
 
 header nav ul {
@@ -54,6 +55,30 @@ header nav ul li {
 
 section {
     scroll-margin-top: 70px;
+}
+
+section > * {
+    display: flex;
+    padding: 15px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section h2, div h2 {
+    float: left;
+    height: 100%;
+}
+
+section ul {
+    padding: 20px;
+}
+
+section ul li {
+    margin: 0px 0px 5px 5px;
+}
+
+form {
+    display: block;
 }
 
 /* Size where nav bar gets a little too close to name */
