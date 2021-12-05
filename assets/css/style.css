@@ -87,7 +87,7 @@ p, figure, section ul, form {
     background-color: var(--content-background-color);
     border-radius: 30px;
     margin: 0px 25px;
-    padding: 20px;
+    padding: 30px;
 }
 
 figure {
@@ -128,6 +128,35 @@ section ul li {
     width: 20px;
 }
 
+form ul {
+    width: 100%;
+    margin: auto;
+}
+
+label {
+    display: inline-block;
+    width: 20%;
+    text-align: right;
+    vertical-align: top;
+}
+
+input, textarea {
+    display: inline-block;
+    width: 75%;
+}
+
+footer, footer a  {
+    text-align: center;
+    background-color: var(--header-background);
+    color: var(--header-link-color);
+    text-decoration: none;
+    padding: 3px 0px;
+}
+
+footer:hover {
+    text-shadow: 0 0 3px var(--header-link-color);
+}
+
 /* Size where nav bar gets a little too close to name */
 @media screen and (max-width: 992px) {
     header {
@@ -149,6 +178,17 @@ section ul li {
 
     section {
         scroll-margin-top: 100px;
+    }
+
+    label {
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+
+    input, textarea {
+        display: block;
+        width: 100%;
     }
 }
 
