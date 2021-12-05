@@ -91,6 +91,7 @@ section h2 {
 p, figure, section ul, form {
     background-color: var(--content-background-color);
     border-radius: 30px;
+    box-shadow: 0px 0px 3px 2px;
     margin: 0px 25px;
     padding: 30px;
 }
@@ -201,11 +202,12 @@ section ul li {
 form ul {
     width: 100%;
     margin: auto;
+    box-shadow: none;
 }
 
 label {
     display: inline-block;
-    width: 20%;
+    width: 17%;
     text-align: right;
     vertical-align: top;
 }
