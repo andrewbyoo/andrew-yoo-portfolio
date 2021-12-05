@@ -95,10 +95,40 @@ figure {
     flex-wrap: wrap;
     align-items: center;
 }
-
-figure a img {
+/* remove when all projects are replaced with links */
+.projects img {
     padding: 5px;
     width: 100%;
+}
+
+.projects a {
+    padding: 5px;
+    width: 100%;
+}
+
+#project1 {
+    width: 350px;
+    height: 150px;
+    box-sizing: flex;
+    background-image: url(../images/350x150-placeholder.png);
+    background-repeat: no-repeat;
+    align-content: space-around;
+    justify-content: space-between;
+}
+
+#project1 > a {
+    display: none;
+    width: 50%;
+    height: 100%;
+    line-height: 9rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(164, 205, 214, 0.4);
+}
+
+#project1:hover > a {
+    display: inline-block;
+    box-shadow: 0 0 5px rgba(55, 111, 123, 0.7) inset;
 }
 
 section ul li {
