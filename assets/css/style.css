@@ -106,6 +106,28 @@ section ul li {
     list-style-type: none;
 }
 
+#github::before {
+    display: inline-block;
+    content: "";
+    background-image: url(../images/GitHub-Mark-120px-plus.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    margin-right: 3px;
+    height: 20px;
+    width: 20px;
+}
+
+#linkedin::before {
+    display: inline-block;
+    content: "";
+    background-image: url(../images/linkedin-logo.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    margin-right: 3px;
+    height: 20px;
+    width: 20px;
+}
+
 /* Size where nav bar gets a little too close to name */
 @media screen and (max-width: 992px) {
     header {
