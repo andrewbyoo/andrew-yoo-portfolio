@@ -2,6 +2,9 @@
     --header-background: #376F7B;
     --header-link-color: #fff;
     --content-background-color: #fff;
+    --project-overlay: rgba(164, 205, 214, 0.4);
+    --project-overlay-shadow: 0 0 5px rgba(55, 111, 123, 0.7) inset;
+    --general-background-color: #A4CDD6
 }
 
 * {
@@ -14,7 +17,7 @@
 }
 
 body {
-    background-color: #A4CDD6;
+    background-color: var(--general-background-color);
 }
 
 header {
@@ -44,6 +47,7 @@ header h1 a:hover, nav ul li a:hover {
 header nav {
     font-size: 110%;
     background-color: var(--header-background);
+    z-index: 2;
 }
 
 header nav ul {
@@ -95,40 +99,75 @@ figure {
     flex-wrap: wrap;
     align-items: center;
 }
-/* remove when all projects are replaced with links */
-.projects img {
-    padding: 5px;
-    width: 100%;
-}
 
 .projects a {
     padding: 5px;
     width: 100%;
 }
 
-#project1 {
-    width: 350px;
-    height: 150px;
-    box-sizing: flex;
-    background-image: url(../images/350x150-placeholder.png);
-    background-repeat: no-repeat;
-    align-content: space-around;
-    justify-content: space-between;
+article {
+    position: relative;
 }
 
-#project1 > a {
+article:hover > * {
+    opacity: 0.5;
+}
+
+article > *:hover {
+    opacity: 1;
+}
+
+h4 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: var(--content-background-color);
+    padding: 5px;
+    border-radius: 1em;
+    border-color: var(--header-background);
+    border-style: solid;
+    border: 2px;
+}
+
+#project1 {
+    background-image: url(../images/horiseon-refactor.png);
+}
+
+/* Replace and separate when other project screenshots are made */
+#project2, #project3, #project4 {
+    background-image: url(../images/background-project-placeholder.jpeg);
+}
+
+#project1, #project2, #project3, #project4 {
+    width: 350px;
+    height: 150px;
+    margin: 5px;
+    background-size: 100%;
+    border: 1px;
+    border-color: var(--header-background);
+    border-style: solid;
+    box-shadow: 0 30px 80px rgba(164, 205, 214, 0.7) inset;
+}
+
+#project1 > a, #project2 > a, #project3 > a, #project4 > a {
     display: none;
     width: 50%;
     height: 100%;
     line-height: 9rem;
     text-align: center;
     text-decoration: none;
-    background-color: rgba(164, 205, 214, 0.4);
+    background-color: var(--project-overlay);
 }
 
-#project1:hover > a {
+#project1:hover > a, #project2:hover > a, #project3:hover > a, #project4:hover > a {
     display: inline-block;
-    box-shadow: 0 0 5px rgba(55, 111, 123, 0.7) inset;
+    box-shadow: var(--project-overlay-shadow);
+}
+
+span {
+    background-color: var(--content-background-color);
+    padding: 5px;
+    border-radius: 1em;
 }
 
 section ul li {
