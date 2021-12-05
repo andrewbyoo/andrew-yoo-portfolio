@@ -47,7 +47,7 @@ header h1 a:hover, nav ul li a:hover {
 }
 
 header nav {
-    font-size: 110%;
+    font-size: 17px;
     background-color: var(--header-background);
 }
 
@@ -210,6 +210,7 @@ label {
     width: 17%;
     text-align: right;
     vertical-align: top;
+    margin-right: 5px;
 }
 
 input, textarea {
@@ -269,6 +270,10 @@ footer:hover {
 }
 
 @media screen and (max-width: 700px) {
+    section {
+        scroll-margin-top: 95px;
+    }
+
     section h2 {
         float: none;
         width: unset;
