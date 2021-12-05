@@ -18,10 +18,11 @@
 
 body {
     background-color: var(--general-background-color);
+    font-family: Source Sans Pro, Work Sans, monospace;
 }
 
 header {
-    font-family: Montserrat, Roboto Slab, Open Sans;
+    font-family: Montserrat, Roboto Slab, Open Sans, sans-serif;
     padding: 15px;
     background-color: var(--header-background);
     position: sticky;
