@@ -37,6 +37,10 @@ header h1 a, nav ul li a {
     margin: 0px 5px;
 }
 
+header h1 a:hover, nav ul li a:hover {
+    text-shadow: 0 0 5px var(--header-link-color);
+}
+
 header nav {
     font-size: 110%;
     background-color: var(--header-background);
@@ -79,22 +83,27 @@ section h2 {
     text-align: right;
 }
 
-p, article, section ul, form {
+p, figure, section ul, form {
     background-color: var(--content-background-color);
     border-radius: 30px;
     margin: 0px 25px;
     padding: 20px;
 }
 
-article {
+figure {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     flex-wrap: wrap;
+    align-items: center;
+}
+
+figure a img {
+    padding: 5px;
+    width: 100%;
 }
 
 section ul li {
     margin: 0px 10px 0px 10px;
+    list-style-type: none;
 }
 
 /* Size where nav bar gets a little too close to name */
