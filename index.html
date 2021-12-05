@@ -39,7 +39,7 @@
         <!-- Replace text with self description -->
         <section id="about-me">
             <h2>About Me</h2>
-            <p>Hello, my name is Andrew Yoo! I am currently a new web developer studying in a coding bootcamp at UPenn. I hope to learn a lot to move my career as a web developer forward. I currently have knowledge of html and css for web development and will be learning much more in the coming months!
+            <p>Hello, my name is Andrew Yoo! I am currently a new web developer studying in a coding bootcamp at UPenn. I hope to learn a lot to move my career as a web developer forward. I currently have knowledge of HTML and CSS for web development and will be learning much more in the coming months!
             </p>
         </section>
         <br>
@@ -68,10 +68,32 @@
         <section id="contact-form">
             <h2>Contact Form</h2>
             <!-- Add boxes for Name, Number, Email, and comments. Add submit button that sends information to email. Form also does not currently link to any action. -->
-            <form action="action_page.php">Lorem ipsum</form>
+            <form action="#">
+                <ul>
+                    <li class="contact-column">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" placeholder="First Last"/>
+                    </li>
+                    <br>
+                    <li class="contact-column">
+                        <label for="number">Phone Number</label>
+                        <input type="tel" name="number" placeholder="555.555.5555"/>
+                    </li>
+                    <br>
+                    <li class="contact-column">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" placeholder="example@example.com"/>
+                    </li>
+                    <br>
+                    <li class="comments">
+                        <label for="comments">Comments</label>
+                        <textarea name="comments" cols="30" rows="10"></textarea>
+                    </li>
+                </ul>
+            </form>
         </section>
     </main>
-
+    <br>
     <footer>
         <a href="#top">Scroll to top</a>
     </footer>
