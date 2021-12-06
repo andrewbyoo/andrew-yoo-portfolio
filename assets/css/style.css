@@ -129,6 +129,11 @@ section h2 {
 ABOUT ME STYLING
 ------------- */
 
+/* Aligns photo and text to the top of the content area */
+.about-me-content {
+    align-items: start;
+}
+
 /* Sets image size and scaling */
 .self-photo {
     min-width: 128px;
@@ -136,6 +141,7 @@ ABOUT ME STYLING
     flex: 1 1;
     margin-right: 5px;
     border-radius: 10px;
+    object-fit: contain;
 }
 
 /* Sets width of text */
