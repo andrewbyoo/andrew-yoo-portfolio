@@ -7,10 +7,12 @@
     --general-background-color: #A4CDD6
 }
 
+
 /* ----------------
 ALL ELEMENT STYLING
 ---------------- */
 
+/* Sets overall styling to all elements and sets scroll behavior when navigation links are clicked */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -25,15 +27,18 @@ ALL ELEMENT STYLING
 FULL PAGE CONTENT STYLING
 ---------------------- */
 
+/* Sets web page background color and general font with google fonts a single built-in font as a fallback */
 body {
     background-color: var(--general-background-color);
     font-family: Source Sans Pro, Work Sans, monospace;
 }
 
+
 /* ------------
 NAV BAR STYLING
 ------------ */
 
+/* Sets font, size, color, text positioning, and font size / Also sets position to stay on page and appear on top of any other elements */
 header {
     font-family: Montserrat, Roboto Slab, Open Sans, sans-serif;
     padding: 15px;
@@ -46,31 +51,31 @@ header {
     z-index: 99;
 }
 
-/* Styling for name in nav bar */
+/* Sets font size for personal name */
 header h1 {
     font-size: 30px;
 }
 
-/* Styling for nav links and resume link in nav bar */
+/* Removes underline on links, sets text color, and margin size */
 header h1 a, nav ul li a {
     text-decoration: none;
     color: var(--header-link-color);
     margin: 0px 5px;
 }
 
-/* Hover pseudo styling for nav bar */
+/* Sets a glowing effect on text on hover */
 header h1 a:hover, nav ul li a:hover {
     text-shadow: 0 0 5px var(--header-link-color);
 }
 
-/* Nav links list styling */
+/* Removes bullet point on links list and sets padding and margin size */
 header nav ul {
     list-style-type: none;
     padding: 5px;
     margin: 5px;
 }
 
-/* Nav link content styling */
+/* Organizes list links to be inline and sets space between individual links */
 header nav ul li {
     display: inline-block;
     margin: 0px 6px;
@@ -83,12 +88,17 @@ header nav ul li {
     object-fit: cover;
 }
 
-/* Nav link scroll margins */
+/* Sets scroll margin so content is shown below the nav bar on screen */
 section {
     scroll-margin-top: 80px;
 }
 
-/* All child elements of section elements styling */
+
+/* -----------------
+MAIN CONTENT STYLING
+----------------- */
+
+/* General display, flex-wrap, padding, and content spacing styling for all child elements of each section */
 section > * {
     display: flex;
     padding: 15px;
@@ -96,11 +106,7 @@ section > * {
     justify-content: space-around;
 }
 
-/* -----------------
-MAIN CONTENT STYLING
------------------ */
-
-/* Main content heading styling */
+/* Sets headers to be on the left side of page content and sets size and alignment */
 section h2 {
     float: left;
     width: 20%;
@@ -109,7 +115,7 @@ section h2 {
     text-align: right;
 }
 
-/* Main content background area styling */
+/* Sets content background size and styling */
 p, figure, section ul, form {
     background-color: var(--content-background-color);
     border-radius: 30px;
@@ -118,32 +124,33 @@ p, figure, section ul, form {
     padding: 30px;
 }
 
+
 /* --------------------
 PROJECT CONTENT STYLING
 -------------------- */
 
-/* Individual project position styling */
-article {
+/* Individual project positioning type */
+.projects {
     position: relative;
 }
 
-/* Project section content styling */
+/* Sizing and padding of individual project content */
 .projects a {
     padding: 5px;
     width: 100%;
 }
 
 /* Individual projects overlay opacity on hover */
-article:hover > * {
+.projects:hover > * {
     opacity: 0.5;
 }
 
 /* Individual projects links overlay opacity on link hover */
-article > *:hover {
+.projects > *:hover {
     opacity: 1;
 }
 
-/* Individual projects name styling */
+/* Individual projects name positioning and background styling on project image */
 h4 {
     position: absolute;
     top: 5px;
@@ -164,7 +171,7 @@ h4 {
     background-image: url(../images/background-project-placeholder.jpeg);
 }
 
-/* Project content styling */
+/* Sets content size, border styling, and adds slightly opaque shadow to each image */
 #project1, #project2, #project3, #project4 {
     width: 350px;
     height: 150px;
@@ -176,7 +183,7 @@ h4 {
     box-shadow: 0 30px 80px rgba(164, 205, 214, 0.7) inset;
 }
 
-/* Project links styling */
+/* Sets links to be invisible and sets the invisible links positions, styling and overlay background color */
 #project1 > a, #project2 > a, #project3 > a, #project4 > a {
     display: none;
     width: 50%;
@@ -187,24 +194,25 @@ h4 {
     background-color: var(--project-overlay);
 }
 
-/* Project links styling on hover */
+/* Changes links to be visible on image hover and sets an overlay shadow */
 #project1:hover > a, #project2:hover > a, #project3:hover > a, #project4:hover > a {
     display: inline-block;
     box-shadow: var(--project-overlay-shadow);
 }
 
-/* Project links text area styling */
+/* Individual links background styling */
 span {
     background-color: var(--content-background-color);
     padding: 5px;
     border-radius: 1em;
 }
 
+
 /* -----------------
 CONTACT INFO STYLING
 ----------------- */
 
-/* Contant Info list item styling */
+/* Sets margin size and removes bullet points from links */
 section ul li {
     margin: 0px 10px 0px 10px;
     list-style-type: none;
@@ -235,18 +243,19 @@ section ul li {
     width: 20px;
 }
 
+
 /* -----------------
 CONTACT FORM STYLING
 ----------------- */
 
-/* Form Content styling */
+/* General content size and removes general border shadow set earlier */
 form ul {
     width: 100%;
     margin: auto;
     box-shadow: none;
 }
 
-/* Form field labels styling */
+/* Sets size and positioning of field names */
 label {
     display: inline-block;
     width: 17%;
@@ -255,7 +264,7 @@ label {
     margin-right: 5px;
 }
 
-/* Contact form text fields styling */
+/* Sets size and positioning of text fields */
 input, textarea {
     display: inline-block;
     width: 75%;
@@ -266,7 +275,12 @@ input, textarea {
     width: 50px;
 }
 
-/* Footer styling */
+
+/* -----------
+FOOTER STYLING
+----------- */
+
+/* Sets background color and size / Aligns text to the center and removes link underline */
 footer, footer a  {
     text-align: center;
     background-color: var(--header-background);
@@ -275,10 +289,15 @@ footer, footer a  {
     padding: 3px 0px;
 }
 
-/* Footer link styling on hover */
+/* Adds glow to text on hover */
 footer a:hover {
     text-shadow: 0 0 3px var(--header-link-color);
 }
+
+
+/* -------------------------------
+STYLING AT DIFFERENT WINDOW WIDTHS
+------------------------------- */
 
 /* Approximate size where nav bar gets a little too close to name */
 @media screen and (max-width: 992px) {
@@ -288,18 +307,18 @@ footer a:hover {
         padding: 15px 15px 0px 15px;
     }
 
-    /* Nav links styling */
+    /* Nav links positioning (not including personal name) */
     header nav {
         display: flex;
         justify-content: space-evenly;
     }
 
-    /* Nav links text styling */
+    /* Nav links text styling (not including personal name) */
     header nav ul li a {
         font-size: 1.9vw;
     }
 
-    /* Hero/splash image styling */
+    /* Hero/splash image size */
     .hero {
         height: 140px;
     }
@@ -330,7 +349,7 @@ footer a:hover {
         scroll-margin-top: 95px;
     }
 
-    /* Main content header styling */
+    /* Resets position styling of main content headers */
     section h2 {
         float: none;
         width: unset;
@@ -342,18 +361,18 @@ footer a:hover {
 
 /* Approximate size overestimate to account for different mobile screens */
 @media screen and (max-width: 500px) {
-    /* Nav links styling */
+    /* Nav links display and position styling (not including personal name) */
     header nav ul li {
         display: block;
         text-align: center;
     }
 
-    /* Nav links text styling */
+    /* Nav links text size (not including personal name) */
     header nav ul li a {
         font-size: 15px;
     }
 
-    /* Hero/splash image styling */
+    /* Hero/splash image size */
     .hero {
         height: 90px;
     }
