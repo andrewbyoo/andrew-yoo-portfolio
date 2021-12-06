@@ -96,15 +96,20 @@ section > * {
     justify-content: space-around;
 }
 
+/* -----------------
+MAIN CONTENT STYLING
+----------------- */
+
+/* Main content heading styling */
 section h2 {
     float: left;
     width: 20%;
     max-width: 220px;
-    height: 100%;
     justify-content: right;
     text-align: right;
 }
 
+/* Main content background area styling */
 p, figure, section ul, form {
     background-color: var(--content-background-color);
     border-radius: 30px;
@@ -113,29 +118,32 @@ p, figure, section ul, form {
     padding: 30px;
 }
 
-figure {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+/* --------------------
+PROJECT CONTENT STYLING
+-------------------- */
+
+/* Individual project position styling */
+article {
+    position: relative;
 }
 
+/* Project section content styling */
 .projects a {
     padding: 5px;
     width: 100%;
 }
 
-article {
-    position: relative;
-}
-
+/* Individual projects overlay opacity on hover */
 article:hover > * {
     opacity: 0.5;
 }
 
+/* Individual projects links overlay opacity on link hover */
 article > *:hover {
     opacity: 1;
 }
 
+/* Individual projects name styling */
 h4 {
     position: absolute;
     top: 5px;
@@ -143,20 +151,20 @@ h4 {
     background-color: var(--content-background-color);
     padding: 5px;
     border-radius: 1em;
-    border-color: var(--header-background);
-    border-style: solid;
-    border: 2px;
 }
 
+/* Project 1 screenshot */
 #project1 {
     background-image: url(../images/horiseon-refactor.png);
 }
 
+/* Other project screenshot (currently placeholders) */
 /* Replace and separate when other project screenshots are made */
 #project2, #project3, #project4 {
     background-image: url(../images/background-project-placeholder.jpeg);
 }
 
+/* Project content styling */
 #project1, #project2, #project3, #project4 {
     width: 350px;
     height: 150px;
@@ -168,6 +176,7 @@ h4 {
     box-shadow: 0 30px 80px rgba(164, 205, 214, 0.7) inset;
 }
 
+/* Project links styling */
 #project1 > a, #project2 > a, #project3 > a, #project4 > a {
     display: none;
     width: 50%;
@@ -178,22 +187,30 @@ h4 {
     background-color: var(--project-overlay);
 }
 
+/* Project links styling on hover */
 #project1:hover > a, #project2:hover > a, #project3:hover > a, #project4:hover > a {
     display: inline-block;
     box-shadow: var(--project-overlay-shadow);
 }
 
+/* Project links text area styling */
 span {
     background-color: var(--content-background-color);
     padding: 5px;
     border-radius: 1em;
 }
 
+/* -----------------
+CONTACT INFO STYLING
+----------------- */
+
+/* Contant Info list item styling */
 section ul li {
     margin: 0px 10px 0px 10px;
     list-style-type: none;
 }
 
+/* GitHub Icon */
 #github::before {
     display: inline-block;
     content: "";
@@ -205,6 +222,8 @@ section ul li {
     width: 20px;
 }
 
+
+/* LinkedIn Icon */
 #linkedin::before {
     display: inline-block;
     content: "";
@@ -216,12 +235,18 @@ section ul li {
     width: 20px;
 }
 
+/* -----------------
+CONTACT FORM STYLING
+----------------- */
+
+/* Form Content styling */
 form ul {
     width: 100%;
     margin: auto;
     box-shadow: none;
 }
 
+/* Form field labels styling */
 label {
     display: inline-block;
     width: 17%;
@@ -230,15 +255,18 @@ label {
     margin-right: 5px;
 }
 
+/* Contact form text fields styling */
 input, textarea {
     display: inline-block;
     width: 75%;
 }
 
+/* Submit button */
 .submit {
     width: 50px;
 }
 
+/* Footer styling */
 footer, footer a  {
     text-align: center;
     background-color: var(--header-background);
@@ -247,50 +275,62 @@ footer, footer a  {
     padding: 3px 0px;
 }
 
-footer:hover {
+/* Footer link styling on hover */
+footer a:hover {
     text-shadow: 0 0 3px var(--header-link-color);
 }
 
-/* Size where nav bar gets a little too close to name */
+/* Approximate size where nav bar gets a little too close to name */
 @media screen and (max-width: 992px) {
+    /* Header area styling */
     header {
         display: block;
         padding: 15px 15px 0px 15px;
     }
+
+    /* Nav links styling */
     header nav {
         display: flex;
         justify-content: space-evenly;
     }
 
+    /* Nav links text styling */
     header nav ul li a {
         font-size: 1.9vw;
     }
 
+    /* Hero/splash image styling */
     .hero {
         height: 140px;
     }
 
+    /* Scroll margin at 992px */
     section {
         scroll-margin-top: 110px;
     }
 
+    /* Contact form label styling */
     label {
         display: block;
         text-align: left;
         width: 100%;
     }
 
+    /* Contact form text field styling */
     input, textarea {
         display: block;
         width: 100%;
     }
 }
 
+/* Approximate size where main content headers' area gets too small */
 @media screen and (max-width: 700px) {
+    /* Scroll margin at 700px */
     section {
         scroll-margin-top: 95px;
     }
 
+    /* Main content header styling */
     section h2 {
         float: none;
         width: unset;
@@ -300,21 +340,25 @@ footer:hover {
     }
 }
 
-/* General estimate of phone width */
+/* Approximate size overestimate to account for different mobile screens */
 @media screen and (max-width: 500px) {
+    /* Nav links styling */
     header nav ul li {
         display: block;
         text-align: center;
     }
 
+    /* Nav links text styling */
     header nav ul li a {
         font-size: 15px;
     }
 
+    /* Hero/splash image styling */
     .hero {
         height: 90px;
     }
 
+    /* Scroll margin at 500px */
     section {
         scroll-margin-top: 200px;
     }
