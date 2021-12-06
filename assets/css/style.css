@@ -116,7 +116,7 @@ section h2 {
 }
 
 /* Sets content background size and styling */
-p, figure, section ul, form {
+.about-me-content, .project-container, section ul, form {
     background-color: var(--content-background-color);
     border-radius: 30px;
     box-shadow: 0px 0px 3px 2px;
@@ -124,6 +124,24 @@ p, figure, section ul, form {
     padding: 30px;
 }
 
+
+/* -------------
+ABOUT ME STYLING
+------------- */
+
+/* Sets image size and scaling */
+.self-photo {
+    min-width: 128px;
+    width: 10%;
+    flex: 1 1;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+/* Sets width of text */
+.about-me-text {
+    width: 70%;
+}
 
 /* --------------------
 PROJECT CONTENT STYLING
@@ -356,6 +374,19 @@ STYLING AT DIFFERENT WINDOW WIDTHS
         max-width: none;
         justify-content: left;
         text-align: left;
+    }
+}
+
+/* Exact size self photo moves position in flex box */
+@media screen and (max-width: 568px) {
+    /* Sets max width when self photo moves above biography text */
+    .self-photo {
+        max-width: 20%;
+    }
+
+    /* Sets biography text to take up full area */
+    .about-me-text {
+        width: 100%;
     }
 }
 
