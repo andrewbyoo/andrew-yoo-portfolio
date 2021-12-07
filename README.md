@@ -8,7 +8,7 @@ This website is about myself which includes a short biography, portfolio, contac
 As an employer, I want to view a potential employee's deployed portfolio of work samples so that I can review samples of their work and assess whether they're a good candidate for an open position.
 ```
 
-## Usage
+## Deployed web page visual
 This website is use as my first portfolio website with the hover effect for the deployed link on Project 2.
 
 ![Responsive Portfolio Screenshot](assets/images/responsive-portfolio.png)
