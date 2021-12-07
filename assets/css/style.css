@@ -122,17 +122,13 @@ section h2 {
     box-shadow: 0px 0px 3px 2px;
     margin: 0px 25px;
     padding: 30px;
+    align-items: start;
 }
 
 
 /* -------------
 ABOUT ME STYLING
 ------------- */
-
-/* Aligns photo and text to the top of the content area */
-.about-me-content {
-    align-items: start;
-}
 
 /* Sets image size and scaling */
 .self-photo {
@@ -153,10 +149,18 @@ ABOUT ME STYLING
 PROJECT CONTENT STYLING
 -------------------- */
 
-/* Individual project positioning type */
+/* Sets individual project positioning, content size, border, and shadow */
 .projects {
     position: relative;
     justify-content: space-between;
+    height: 150px;
+    flex: 1 1 auto;
+    margin: 5px;
+    background-size: 100%;
+    border: 1px;
+    border-color: var(--header-background);
+    border-style: solid;
+    box-shadow: 0 30px 80px rgba(164, 205, 214, 0.7) inset;
 }
 
 /* Sizing and padding of individual project content */
@@ -185,16 +189,29 @@ h4 {
     border-radius: 1em;
 }
 
-/* Sets content size, border styling, and adds slightly opaque shadow to each image */
-#project1, #project2, #project3, #project4, #project5 {
-    height: 150px;
-    flex: 1 1 auto;
-    margin: 5px;
-    background-size: 100%;
-    border: 1px;
-    border-color: var(--header-background);
-    border-style: solid;
-    box-shadow: 0 30px 80px rgba(164, 205, 214, 0.7) inset;
+
+/* Sets links to be invisible and sets the invisible links positions, styling and overlay background color */
+.projects > a {
+    display: none;
+    width: 50%;
+    height: 100%;
+    line-height: 9rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--project-overlay);
+}
+
+/* Changes links to be visible on image hover and sets an overlay shadow */
+.projects:hover > a {
+    display: inline-block;
+    box-shadow: var(--project-overlay-shadow);
+}
+
+/* Individual links background styling */
+span {
+    background-color: var(--content-background-color);
+    padding: 5px;
+    border-radius: 1em;
 }
 
 /* Project 1 - feautured project styling */
@@ -209,30 +226,6 @@ h4 {
 #project2, #project3, #project4, #project5 {
     background-image: url(../images/background-project-placeholder.jpeg);
     width: 45%;
-}
-
-/* Sets links to be invisible and sets the invisible links positions, styling and overlay background color */
-#project1 > a, #project2 > a, #project3 > a, #project4 > a, #project5 > a {
-    display: none;
-    width: 50%;
-    height: 100%;
-    line-height: 9rem;
-    text-align: center;
-    text-decoration: none;
-    background-color: var(--project-overlay);
-}
-
-/* Changes links to be visible on image hover and sets an overlay shadow */
-#project1:hover > a, #project2:hover > a, #project3:hover > a, #project4:hover > a, #project5:hover > a {
-    display: inline-block;
-    box-shadow: var(--project-overlay-shadow);
-}
-
-/* Individual links background styling */
-span {
-    background-color: var(--content-background-color);
-    padding: 5px;
-    border-radius: 1em;
 }
 
 
