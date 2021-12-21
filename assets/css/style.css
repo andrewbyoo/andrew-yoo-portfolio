@@ -71,16 +71,39 @@ header nav ul li {
     margin: 0px 6px;
 }
 
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 5px;
+}
+
 /* Hero/background splash image styling */
 .hero {
+    position: absolute;
     width: 100%;
-    height: 200px;
+    height: 400px;
     object-fit: cover;
+}
+
+/* Sets image size and scaling */
+.self-photo {
+    position: absolute;
+    height: 75%;
+    border-radius: 10px;
+    margin: auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--header-background);
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
 }
 
 /* Sets scroll margin so content is shown below the nav bar on screen */
 section {
-    scroll-margin-top: 120px;
+    scroll-margin-top: 75px;
 }
 
 
@@ -113,26 +136,6 @@ section h2 {
     margin: 0px 25px;
     padding: 30px;
     align-items: start;
-}
-
-
-/* -------------
-ABOUT ME STYLING
-------------- */
-
-/* Sets image size and scaling */
-.self-photo {
-    min-width: 128px;
-    width: 10%;
-    flex: 1 1;
-    margin-right: 5px;
-    border-radius: 10px;
-    object-fit: contain;
-}
-
-/* Sets width of text */
-.about-me-text {
-    width: 70%;
 }
 
 /* --------------------
@@ -310,33 +313,11 @@ footer a:hover {
 STYLING AT DIFFERENT WINDOW WIDTHS
 ------------------------------- */
 
-/* Approximate size where nav bar gets a little too close to name */
-@media screen and (max-width: 992px) {
-    /* Header area styling */
-    header {
-        display: block;
-        padding: 15px 15px 0px 15px;
-    }
-
-    /* Nav links positioning (not including personal name) */
-    header nav {
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    /* Nav links text styling (not including personal name) */
-    header nav ul li a {
-        font-size: 1.9vw;
-    }
-
-    /* Hero/splash image size */
-    .hero {
-        height: 140px;
-    }
-
+/* Approximate size where nav bar moves to its own line according to bootstrap */
+@media screen and (max-width: 991px) {
     /* Scroll margin at 992px */
     section {
-        scroll-margin-top: 110px;
+        scroll-margin-top: 123px;
     }
 
     /* Contact form label styling */
@@ -357,7 +338,7 @@ STYLING AT DIFFERENT WINDOW WIDTHS
 @media screen and (max-width: 700px) {
     /* Scroll margin at 700px */
     section {
-        scroll-margin-top: 95px;
+        scroll-margin-top: 110px;
     }
 
     /* Resets position styling of main content headers */
@@ -365,18 +346,13 @@ STYLING AT DIFFERENT WINDOW WIDTHS
         float: none;
         width: unset;
         max-width: none;
-        justify-content: left;
-        text-align: left;
+        justify-content: center;
+        text-align: center;
     }
 }
 
 /* Exact size self photo moves position in flex box */
 @media screen and (max-width: 568px) {
-    /* Sets max width when self photo moves above biography text */
-    .self-photo {
-        max-width: 20%;
-    }
-
     /* Sets biography text to take up full area */
     .about-me-text {
         width: 100%;
@@ -386,24 +362,17 @@ STYLING AT DIFFERENT WINDOW WIDTHS
 /* Approximate size overestimate to account for different mobile screens */
 @media screen and (max-width: 500px) {
     /* Nav links display and position styling (not including personal name) */
-    header nav ul li {
+    header {
         display: block;
         text-align: center;
     }
 
-    /* Nav links text size (not including personal name) */
-    header nav ul li a {
-        font-size: 15px;
+    .container-fluid {
+        justify-content: center !important;
     }
 
-    /* Hero/splash image size */
-    .hero {
-        height: 90px;
-    }
-
-    /* Scroll margin at 500px */
-    section {
-        scroll-margin-top: 200px;
+    .dropdown-menu li {
+        text-align: center;
     }
 
     /* Sets project images to move into a single column */
