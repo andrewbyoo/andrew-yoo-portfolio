@@ -1,10 +1,10 @@
 :root {
-    --header-background: #376F7B;
-    --header-link-color: #fff;
-    --content-background-color: #fff;
-    --project-overlay: rgba(164, 205, 214, 0.4);
-    --project-overlay-shadow: 0 0 5px rgba(55, 111, 123, 0.7) inset;
-    --general-background-color: #A4CDD6
+  --header-background: #376F7B;
+  --header-link-color: #fff;
+  --content-background-color: #fff;
+  --project-overlay: rgba(164, 205, 214, 0.4);
+  --project-overlay-shadow: 0 0 5px rgba(55, 111, 123, 0.7) inset;
+  --general-background-color: #A4CDD6
 }
 
 
@@ -14,11 +14,11 @@ ALL ELEMENT STYLING
 
 /* Sets overall styling to all elements and sets scroll behavior when navigation links are clicked */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    line-height: 150%;
-    color: #114673;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  line-height: 150%;
+  color: #114673;
 }
 
 
@@ -28,8 +28,8 @@ FULL PAGE CONTENT STYLING
 
 /* Sets web page background color and general font with google fonts a single built-in font as a fallback */
 body {
-    background-color: var(--general-background-color);
-    font-family: Source Sans Pro, Work Sans, monospace;
+  background-color: var(--general-background-color);
+  font-family: Source Sans Pro, Work Sans, monospace;
 }
 
 
@@ -39,71 +39,71 @@ NAV BAR STYLING
 
 /* Sets font, size, color, text positioning, and font size / Also sets position to stay on page and appear on top of any other elements */
 header {
-    font-family: Montserrat, Roboto Slab, Open Sans, sans-serif;
-    background-color: var(--header-background);
-    position: sticky;
-    top: 0;
-    z-index: 99;
+  font-family: Montserrat, Roboto Slab, Open Sans, sans-serif;
+  background-color: var(--header-background);
+  position: sticky;
+  top: 0;
+  z-index: 99;
 }
 
 /* Overwrites bootstrap's nav link background color */
 .bg-light {
-    background-color: var(--header-background) !important;
+  background-color: var(--header-background) !important;
 }
 
 /* Overwrites bootstrap's nav link text color */
 .navbar-brand, .nav-link {
-    color: var(--header-link-color) !important;
+  color: var(--header-link-color) !important;
 }
 
 /* Sets font size for personal name */
 .navbar-brand {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 /* Sets a glowing effect on text on hover */
 header div a:hover, nav ul li a:hover {
-    text-shadow: 0 0 5px var(--header-link-color);
+  text-shadow: 0 0 5px var(--header-link-color);
 }
 
 /* Organizes list links to be inline and sets space between individual links */
 header nav ul li {
-    margin: 0px 6px;
+  margin: 0px 6px;
 }
 
 .hero-container {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    margin-bottom: 5px;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 5px;
 }
 
 /* Hero/background splash image styling */
 .hero {
-    position: absolute;
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 
 /* Sets image size and scaling */
 .self-photo {
-    position: absolute;
-    height: 75%;
-    border-radius: 10px;
-    margin: auto;
-    border-style: solid;
-    border-width: 2px;
-    border-color: var(--header-background);
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
+  position: absolute;
+  height: 75%;
+  border-radius: 10px;
+  margin: auto;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--header-background);
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
 }
 
 /* Sets scroll margin so content is shown below the nav bar on screen */
 section {
-    scroll-margin-top: 75px;
+  scroll-margin-top: 75px;
 }
 
 
@@ -113,29 +113,29 @@ MAIN CONTENT STYLING
 
 /* General display, flex-wrap, padding, and content spacing styling for all child elements of each section */
 section > * {
-    display: flex;
-    padding: 15px;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  padding: 15px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 /* Sets headers to be on the left side of page content and sets size and alignment */
 section h2 {
-    float: left;
-    width: 20%;
-    max-width: 220px;
-    justify-content: right;
-    text-align: right;
+  float: left;
+  width: 20%;
+  max-width: 220px;
+  justify-content: right;
+  text-align: right;
 }
 
 /* Sets content background size and styling */
 .about-me-content, .project-container, section ul, form {
-    background-color: var(--content-background-color);
-    border-radius: 30px;
-    box-shadow: 0px 0px 3px 2px;
-    margin: 0px 25px;
-    padding: 30px;
-    align-items: start;
+  background-color: var(--content-background-color);
+  border-radius: 30px;
+  box-shadow: 0px 0px 3px 2px;
+  margin: 0px 25px;
+  padding: 30px;
+  align-items: start;
 }
 
 /* --------------------
@@ -144,81 +144,80 @@ PROJECT CONTENT STYLING
 
 /* Sets individual project positioning, content size, border, and shadow */
 .projects {
-    position: relative;
-    justify-content: space-between;
-    height: 150px;
-    flex: 1 1 auto;
-    margin: 5px;
-    background-size: 100%;
-    border: 1px;
-    border-color: var(--header-background);
-    border-style: solid;
-    box-shadow: 0 30px 80px rgba(164, 205, 214, 0.7) inset;
+  position: relative;
+  justify-content: space-between;
+  height: 150px;
+  flex: 1 1 auto;
+  margin: 5px;
+  background-size: 100%;
+  border: 1px;
+  border-color: var(--header-background);
+  border-style: solid;
+  box-shadow: 0 30px 80px rgba(164, 205, 214, 0.7) inset;
 }
 
 /* Sizing and padding of individual project content */
 .projects a {
-    padding: 5px;
-    width: 100%;
+  padding: 5px;
+  width: 100%;
 }
 
 /* Individual projects overlay opacity on hover */
 .projects:hover > * {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 /* Individual projects links overlay opacity on link hover */
 .projects > *:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* Individual projects name positioning and background styling on project image */
 h4 {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    background-color: var(--content-background-color);
-    padding: 5px;
-    border-radius: 1em;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: var(--content-background-color);
+  padding: 5px;
+  border-radius: 1em;
 }
-
 
 /* Sets links to be invisible and sets the invisible links positions, styling and overlay background color */
 .projects > a {
-    display: none;
-    width: 50%;
-    height: 100%;
-    line-height: 9rem;
-    text-align: center;
-    text-decoration: none;
-    background-color: var(--project-overlay);
+  display: none;
+  width: 50%;
+  height: 100%;
+  line-height: 9rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--project-overlay);
 }
 
 /* Changes links to be visible on image hover and sets an overlay shadow */
 .projects:hover > a {
-    display: inline-block;
-    box-shadow: var(--project-overlay-shadow);
+  display: inline-block;
+  box-shadow: var(--project-overlay-shadow);
 }
 
 /* Individual links background styling */
 span {
-    background-color: var(--content-background-color);
-    padding: 5px;
-    border-radius: 1em;
+  background-color: var(--content-background-color);
+  padding: 5px;
+  border-radius: 1em;
 }
 
 /* Project 1 - feautured project styling */
 #project1 {
-    background-image: url(../images/horiseon-refactor.png);
-    width: 100%;
-    height: 300px;
+  background-image: url(../images/horiseon-refactor.png);
+  width: 100%;
+  height: 300px;
 }
 
 /* Other project screenshot (currently placeholders) */
 /* Replace and separate when other project screenshots are made and should not have a width set */
 #project2, #project3, #project4, #project5 {
-    background-image: url(../images/background-project-placeholder.jpeg);
-    width: 45%;
+  background-image: url(../images/background-project-placeholder.jpeg);
+  width: 45%;
 }
 
 
@@ -228,33 +227,32 @@ CONTACT INFO STYLING
 
 /* Sets margin size and removes bullet points from links */
 section ul li {
-    margin: 0px 10px 0px 10px;
-    list-style-type: none;
+  margin: 0px 10px 0px 10px;
+  list-style-type: none;
 }
 
 /* GitHub Icon */
 #github::before {
-    display: inline-block;
-    content: "";
-    background-image: url(../images/GitHub-Mark-120px-plus.png);
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-    margin-right: 3px;
-    height: 20px;
-    width: 20px;
+  display: inline-block;
+  content: "";
+  background-image: url(../images/GitHub-Mark-120px-plus.png);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  margin-right: 3px;
+  height: 20px;
+  width: 20px;
 }
-
 
 /* LinkedIn Icon */
 #linkedin::before {
-    display: inline-block;
-    content: "";
-    background-image: url(../images/linkedin-logo.png);
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-    margin-right: 3px;
-    height: 20px;
-    width: 20px;
+  display: inline-block;
+  content: "";
+  background-image: url(../images/linkedin-logo.png);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  margin-right: 3px;
+  height: 20px;
+  width: 20px;
 }
 
 
@@ -264,29 +262,29 @@ CONTACT FORM STYLING
 
 /* General content size and removes general border shadow set earlier */
 form ul {
-    width: 100%;
-    margin: auto;
-    box-shadow: none;
+  width: 100%;
+  margin: auto;
+  box-shadow: none;
 }
 
 /* Sets size and positioning of field names */
 label {
-    display: inline-block;
-    width: 17%;
-    text-align: right;
-    vertical-align: top;
-    margin-right: 5px;
+  display: inline-block;
+  width: 17%;
+  text-align: right;
+  vertical-align: top;
+  margin-right: 5px;
 }
 
 /* Sets size and positioning of text fields */
 input, textarea {
-    display: inline-block;
-    width: 75%;
+  display: inline-block;
+  width: 75%;
 }
 
 /* Submit button */
 .submit {
-    width: 50px;
+  width: 50px;
 }
 
 
@@ -296,16 +294,16 @@ FOOTER STYLING
 
 /* Sets background color and size / Aligns text to the center and removes link underline */
 footer, footer a  {
-    text-align: center;
-    background-color: var(--header-background);
-    color: var(--header-link-color);
-    text-decoration: none;
-    padding: 3px 0px;
+  text-align: center;
+  background-color: var(--header-background);
+  color: var(--header-link-color);
+  text-decoration: none;
+  padding: 3px 0px;
 }
 
 /* Adds glow to text on hover */
 footer a:hover {
-    text-shadow: 0 0 3px var(--header-link-color);
+  text-shadow: 0 0 3px var(--header-link-color);
 }
 
 
@@ -315,68 +313,70 @@ STYLING AT DIFFERENT WINDOW WIDTHS
 
 /* Approximate size where nav bar moves to its own line according to bootstrap */
 @media screen and (max-width: 991px) {
-    /* Scroll margin at 992px */
-    section {
-        scroll-margin-top: 123px;
-    }
+  /* Scroll margin at 992px */
+  section {
+    scroll-margin-top: 123px;
+  }
 
-    /* Contact form label styling */
-    label {
-        display: block;
-        text-align: left;
-        width: 100%;
-    }
+  /* Contact form label styling */
+  label {
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
 
-    /* Contact form text field styling */
-    input, textarea {
-        display: block;
-        width: 100%;
-    }
+  /* Contact form text field styling */
+  input, textarea {
+    display: block;
+    width: 100%;
+  }
 }
 
 /* Approximate size where main content headers' area gets too small */
 @media screen and (max-width: 700px) {
-    /* Scroll margin at 700px */
-    section {
-        scroll-margin-top: 110px;
-    }
+  /* Scroll margin at 700px */
+  section {
+    scroll-margin-top: 110px;
+  }
 
-    /* Resets position styling of main content headers */
-    section h2 {
-        float: none;
-        width: unset;
-        max-width: none;
-        justify-content: center;
-        text-align: center;
-    }
+  /* Resets position styling of main content headers */
+  section h2 {
+    float: none;
+    width: unset;
+    max-width: none;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 /* Exact size self photo moves position in flex box */
 @media screen and (max-width: 568px) {
-    /* Sets biography text to take up full area */
-    .about-me-text {
-        width: 100%;
-    }
+  /* Sets biography text to take up full area */
+  .about-me-text {
+    width: 100%;
+  }
 }
 
 /* Approximate size overestimate to account for different mobile screens */
 @media screen and (max-width: 500px) {
-    /* Nav links display and position styling (not including personal name) */
-    header {
-        display: block;
-        text-align: center;
-    }
+  /* Nav links display and position styling (not including personal name) */
+  header {
+    display: block;
+    text-align: center;
+  }
 
-    .container-fluid {
-        justify-content: center !important;
-    }
+  /* Centers Header contents */
+  .container-fluid {
+    justify-content: center !important;
+  }
 
-    .dropdown-menu li {
-        text-align: center;
-    }
+  /* Centers Nav List Items */
+  .dropdown-menu li {
+    text-align: center;
+  }
 
-    /* Sets project images to move into a single column */
-    #project2, #project3, #project4, #project5 {
-        width: 100%;
-    }
+  /* Sets project images to move into a single column */
+  #project2, #project3, #project4, #project5 {
+    width: 100%;
+  }
 }
