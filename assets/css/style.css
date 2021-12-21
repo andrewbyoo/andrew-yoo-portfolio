@@ -17,7 +17,6 @@ ALL ELEMENT STYLING
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    scroll-behavior: smooth;
     line-height: 150%;
     color: #114673;
 }
@@ -41,43 +40,34 @@ NAV BAR STYLING
 /* Sets font, size, color, text positioning, and font size / Also sets position to stay on page and appear on top of any other elements */
 header {
     font-family: Montserrat, Roboto Slab, Open Sans, sans-serif;
-    padding: 15px;
     background-color: var(--header-background);
     position: sticky;
     top: 0;
-    display: flex;
-    justify-content: space-between;
-    font-size: 17px;
     z-index: 99;
 }
 
+/* Overwrites bootstrap's nav link background color */
+.bg-light {
+    background-color: var(--header-background) !important;
+}
+
+/* Overwrites bootstrap's nav link text color */
+.navbar-brand, .nav-link {
+    color: var(--header-link-color) !important;
+}
+
 /* Sets font size for personal name */
-header h1 {
+.navbar-brand {
     font-size: 30px;
 }
 
-/* Removes underline on links, sets text color, and margin size */
-header h1 a, nav ul li a {
-    text-decoration: none;
-    color: var(--header-link-color);
-    margin: 0px 5px;
-}
-
 /* Sets a glowing effect on text on hover */
-header h1 a:hover, nav ul li a:hover {
+header div a:hover, nav ul li a:hover {
     text-shadow: 0 0 5px var(--header-link-color);
-}
-
-/* Removes bullet point on links list and sets padding and margin size */
-header nav ul {
-    list-style-type: none;
-    padding: 5px;
-    margin: 5px;
 }
 
 /* Organizes list links to be inline and sets space between individual links */
 header nav ul li {
-    display: inline-block;
     margin: 0px 6px;
 }
 
@@ -90,7 +80,7 @@ header nav ul li {
 
 /* Sets scroll margin so content is shown below the nav bar on screen */
 section {
-    scroll-margin-top: 80px;
+    scroll-margin-top: 120px;
 }
 
 
