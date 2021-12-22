@@ -208,18 +208,34 @@ span {
 
 /* Project 1 - feautured project styling */
 #project1 {
-  background-image: url(../images/horiseon-refactor.png);
+  background-image: url(../images/sheesh-quiz.png);
   width: 100%;
   height: 300px;
 }
 
-/* Other project screenshot (currently placeholders) */
-/* Replace and separate when other project screenshots are made and should not have a width set */
-#project2, #project3, #project4, #project5 {
-  background-image: url(../images/background-project-placeholder.jpeg);
+/* Project 2 styling */
+#project2 {
+  background-image: url(../images/weather-dashboard.png);
   width: 45%;
 }
 
+/* Project 3 styling */
+#project3 {
+  background-image: url(../images/day-planner-visual.png);
+  width: 45%;
+}
+
+/* Project 4 styling */
+#project4 {
+  background-image: url(../images/Password-Gen-Screenshot.png);
+  width: 45%;
+}
+
+/* Project 5 styling */
+#project5 {
+  background-image: url(../images/horiseon-refactor.png);
+  width: 45%;
+}
 
 /* -----------------
 CONTACT INFO STYLING
