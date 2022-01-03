@@ -24,4 +24,4 @@ The following are the features that were implemented:
 * Contact form that will be an easy on page way to contact me. <!-- Does not yet have functionality as it has not yet been covered in class -->
 
 ## Deployed Link
-https://andrewyoo93.github.io/andrew-yoo-portfolio/
+https://andrewbyoo.github.io/andrew-yoo-portfolio/
