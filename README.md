@@ -9,7 +9,7 @@ As an employer, I want to view a potential employee's deployed portfolio of work
 ```
 
 ## Deployed web page visual
-This website is to be used as my first portfolio website with the hover effect for the deployed link shown on Project 2.
+This website is to be used as my first portfolio website with the hover effect for the deployed link shown on Project 4.
 
 ![Responsive Portfolio Screenshot](assets/images/responsive-portfolio.png)
 
