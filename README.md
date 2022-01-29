@@ -2,15 +2,15 @@
 ## Description
 This website is about myself which includes a short biography, portfolio, contact and social media links, and a contact form.
 
-## User Story
+## Table of Contents
+- [Visual](#visual)
+- [Features](#features)
+- [Link](#link)
+- [Questions](#questions)
 
-```
-As an employer, I want to view a potential employee's deployed portfolio of work samples so that I can review samples of their work and assess whether they're a good candidate for an open position.
-```
-
-## Deployed web page visual
-This website is to be used as my first portfolio website with the hover effect for the deployed link shown on Project 4.
-![Responsive Portfolio Screenshot](assets/images/responsive-portfolio.png)
+## Visual
+This visual shows the website with the hover effect for the GitHub link shown on Project 2.
+![Portfolio Screenshot](assets/images/portfolio-visual.png)
 
 ## Features
 The following are the features that were implemented:
@@ -22,5 +22,9 @@ The following are the features that were implemented:
 * Contact links that can be clicked to directly call for the phone number, directly email for the email link, or take you directly to the web pages for the GitHub and LinkedIn links.
 * Contact form that will be an easy on page way to contact me. <!-- Does not yet have functionality as it has not yet been covered in class -->
 
-## Deployed Link
+## Link
 https://andrewbyoo.github.io/andrew-yoo-portfolio/
+
+## Questions
+To view more of my projects, you can visit my GitHub page at [andrewbyoo](https://github.com/andrewbyoo).
+If you have questions, email me at [andrewbyoo@gmail.com](mailto:andrewbyoo@gmail.com).
