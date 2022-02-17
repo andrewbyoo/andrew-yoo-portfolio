@@ -97,32 +97,25 @@
 
       <section id="contact-form">
         <h2>Contact Form</h2>
-        <form action="mailto:andrewbyoo@gmail.com" method="post" enctype="text/plain">
+        <form action="contact.php" method="post" enctype="text/plain">
           <ul>
             <li class="contact-column">
-              <label for="name">Name</label>
-              <input type="text" name="name" placeholder="First Last" />
+              <label for="Name">Name</label>
+              <input type="text" id="Name" name="Name" placeholder="First Last" />
             </li>
 
             <br />
 
             <li class="contact-column">
-              <label for="number">Phone Number</label>
-              <input type="tel" name="number" placeholder="555.555.5555" />
-            </li>
-
-            <br />
-
-            <li class="contact-column">
-              <label for="email">Email</label>
-              <input type="text" name="email" placeholder="example@example.com" />
+              <label for="Email">Email</label>
+              <input type="email" id="Email" name="Email" placeholder="example@example.com" />
             </li>
 
             <br />
 
             <li class="comments">
-              <label for="comments">Comments</label>
-              <textarea name="comments" cols="30" rows="10"></textarea>
+              <label for="Message">Message</label>
+              <textarea id="Message" name="Message" cols="30" rows="10"></textarea>
             </li>
 
             <br />
